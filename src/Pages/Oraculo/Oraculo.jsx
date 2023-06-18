@@ -4,7 +4,17 @@ import ItemPicker from "../../Components/ItemPicker/ItemPicker";
 import PickerGroup from "../../Components/PickerGroup/PickerGroup";
 
 const Oraculo = () => {
-  const { Tablas } = useContext(GlobalContext);
+  const {
+    Tablas,
+    Amenaza,
+    Monstruo,
+    Nombre,
+    Combate,
+    Personaje,
+    Inflexion,
+    Trampa,
+    Asentamiento,
+  } = useContext(GlobalContext);
 
   return (
     <div>
@@ -26,81 +36,81 @@ const Oraculo = () => {
       <PickerGroup
         title={"Asentamiento"}
         array={[
-          Tablas.AsentamientoNombrePrimero,
-          Tablas.AsentamientoNombreSegundo,
-          Tablas.AsentamientoProblema,
+          Asentamiento.AsentamientoNombrePrimero,
+          Asentamiento.AsentamientoNombreSegundo,
+          Asentamiento.AsentamientoProblema,
         ]}
         subtitles={["Nombre 1/2", "Nombre 2/2", "Problema"]}
       />
       <PickerGroup
         title={"Trampa"}
-        array={[Tablas.TrampaEvento, Tablas.TrampaComponente]}
+        array={[Trampa.TrampaEvento, Trampa.TrampaComponente]}
         subtitles={["Evento", "Componente"]}
       />
       <PickerGroup
         title={"Punto de Inflexion"}
         array={[
-          Tablas.RepercucionMistica,
-          Tablas.GiroArgumental,
-          Tablas.NivelDesafio,
+          Inflexion.RepercucionMistica,
+          Inflexion.GiroArgumental,
+          Inflexion.NivelDesafio,
         ]}
         subtitles={["Repercucion Mistica", "Giro Argumental", "Nv Desafío"]}
       />
       <PickerGroup
         title={"Personaje"}
         array={[
-          Tablas.PersonajeRol,
-          Tablas.PersonajeProposito,
-          Tablas.PersonajeDescriptor,
-          Tablas.PersonajeDisposicion,
+          Personaje.PersonajeRol,
+          Personaje.PersonajeProposito,
+          Personaje.PersonajeDescriptor,
+          Personaje.PersonajeDisposicion,
         ]}
         subtitles={["Rol", "Proposito", "Descriptor", "Disposicion"]}
       />
       <PickerGroup
         title={"Combate"}
         array={[
-          Tablas.CombateMetodo,
-          Tablas.CombateBlanco,
-          Tablas.CombateAccion,
+          Combate.CombateMetodo,
+          Combate.CombateBlanco,
+          Combate.CombateAccion,
         ]}
         subtitles={["Metodo", "Blanco", "Acción"]}
       />
       <PickerGroup
         title={"Nombres"}
         array={[
-          Tablas.Nombres1,
-          Tablas.Nombres2,
-          Tablas.NombresGigantes,
-          Tablas.NombresTrolls,
-          Tablas.NombresVarus,
+          Nombre.Nombres1,
+          Nombre.Nombres2,
+          Nombre.NombresGigantes,
+          Nombre.NombresTrolls,
+          Nombre.NombresVarus,
         ]}
         subtitles={["Nombres", "Apellidos", "Gigantes", "Trolls", "Varus"]}
       />
       <PickerGroup
         title={"Monstruosidad"}
         array={[
-          Tablas.MonstruoTamano,
-          Tablas.MonstruoForma,
-          Tablas.MonstruoCaracteristica,
-          Tablas.MonstruoHabilidad,
+          Monstruo.MonstruoTamano,
+          Monstruo.MonstruoForma,
+          Monstruo.MonstruoCaracteristica,
+          Monstruo.MonstruoHabilidad,
         ]}
         subtitles={["Tamaño", "Forma", "Caracteristica", "Habilidad"]}
       />
       <PickerGroup
         title={"Categoría de Amenaza"}
-        array={[Tablas.AmenazaCategoria]}
+        array={[Amenaza.Categoria]}
         subtitles={[""]}
       />
       <PickerGroup
         title={"Amenazas"}
         array={[
-          Tablas.AmenazaEmergente,
-          Tablas.AmenazaCondenado,
-          Tablas.AmenazaAmbiental,
-          Tablas.AmenazaPlaga,
-          Tablas.AmenazaCriatura,
-          Tablas.AmenazaHorda,
-          Tablas.AmenazaLider,
+          Amenaza.Emergente,
+          Amenaza.Condenado,
+          Amenaza.Ambiental,
+          Amenaza.Plaga,
+          Amenaza.Criatura,
+          Amenaza.Horda,
+          Amenaza.Lider,
         ]}
         subtitles={[
           "Emergente",
