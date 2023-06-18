@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ItemPicker = ({ array }) => {
+const ItemPicker = ({ array, title }) => {
   const [maxNum] = useState(array[array.length - 1].tirada);
 
   const dice = (num) => {
@@ -25,9 +25,10 @@ const ItemPicker = ({ array }) => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center w-full">
+      <h1>{title}</h1>
       <div
-        className="m-4 p-2 w-fit h-32 rounded border-2 border-indigo-400 bg-indigo-200 flex justify-center items-center select-none"
+        className="m-4 p-2 w-full h-32 rounded border-2 border-indigo-400 bg-indigo-200 flex justify-center items-center select-none"
         onClick={() => reroll()}
       >
         <h1 className="my-2 mx-6 text-2xl">{value}</h1>
