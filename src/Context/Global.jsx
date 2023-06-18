@@ -9,6 +9,7 @@ import { Personaje } from "../assets/Personaje.js";
 import { Inflexion } from "../assets/Inflexion.js";
 import { Trampa } from "../assets/Trampa.js";
 import { Asentamiento } from "../assets/Asentamiento.js";
+import { Lugar } from "../assets/Lugar.js";
 
 export const GlobalContext = React.createContext();
 
@@ -26,6 +27,7 @@ export const GlobalProvider = ({ children }) => {
           Inflexion,
           Trampa,
           Asentamiento,
+          Lugar,
         }}
       >
         {children}

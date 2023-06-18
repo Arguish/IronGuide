@@ -14,6 +14,7 @@ const Oraculo = () => {
     Inflexion,
     Trampa,
     Asentamiento,
+    Lugar,
   } = useContext(GlobalContext);
 
   return (
@@ -32,6 +33,11 @@ const Oraculo = () => {
           Tablas.OraculoSitioEnfoque,
         ]}
         subtitles={["Dominio", "Aspecto", "Tema", "Enfoque"]}
+      />
+      <PickerGroup
+        title={"Lugar"}
+        array={[Lugar.Region, Lugar.Lugar, Lugar.Descriptor, Lugar.Costa]}
+        subtitles={["Región", "Lugar", "Descriptor", "Costa"]}
       />
       <PickerGroup
         title={"Asentamiento"}
