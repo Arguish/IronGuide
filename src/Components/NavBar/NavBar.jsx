@@ -4,7 +4,6 @@ import NavBtn from "..//NavBtn/NavBtn";
 const NavBar = () => {
   return (
     <div className=" mb-6 ">
-      <NavBtn to="/About"></NavBtn>
       <NavBtn to="/Destino"></NavBtn>
       <NavBtn to="/Aventura"></NavBtn>
       <NavBtn to="/Relacion"></NavBtn>
@@ -13,6 +12,8 @@ const NavBar = () => {
       <NavBtn to="/Delve"></NavBtn>
       <NavBtn to="/Busqueda"></NavBtn>
       <NavBtn to="/Oraculo"></NavBtn>
+      <NavBtn to="/All"></NavBtn>
+      <NavBtn to="/About"></NavBtn>
     </div>
   );
 };

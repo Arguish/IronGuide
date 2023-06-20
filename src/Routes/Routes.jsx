@@ -10,6 +10,7 @@ import Sufrimiento from "../Pages/Sufrimiento/Sufrimiento.jsx";
 import Delve from "../Pages/Delve/Delve.jsx";
 import Busqueda from "../Pages/Busqueda/Busqueda.jsx";
 import Oraculo from "../Pages/Oraculo/Oraculo.jsx";
+import All from "../Pages/All/All.jsx";
 
 const Directory = () => {
   return (
@@ -23,6 +24,7 @@ const Directory = () => {
       <Route path="/Sufrimiento" element={<Sufrimiento />} />
       <Route path="/Delve" element={<Delve />} />
       <Route path="/Busqueda" element={<Busqueda />} />
+      <Route path="/All" element={<All />} />
       <Route path="/Oraculo" element={<Oraculo />} />
       <Route path="/*" element={<Navigate to="/" replace={true} />} />
     </Routes>
