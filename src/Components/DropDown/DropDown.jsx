@@ -18,7 +18,7 @@ const DropDown = ({ title, children }) => {
         <h1>{show ? "🔼" : "🔽"}</h1>
       </div>
       <div
-        className={` overflow-hidden p-2 bg-slate-500 transition duration-500 rounded-b-2xl
+        className={` overflow-hidden bg-slate-500 transition duration-500 rounded-b-2xl
         ${show ? "h-auto p-2" : "h-0 p-0"}`}
       >
         {children}
