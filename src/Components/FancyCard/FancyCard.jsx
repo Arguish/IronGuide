@@ -5,9 +5,10 @@ const FancyCard = ({ title = "", url = "", pos = "50% 50%", children }) => {
     <div
       style={{
         backgroundPosition: `${pos}`,
-        filter: "grayscale(100%)",
-        backgroundImage: `radial-gradient(transparent 0%, #000 75%),
-          url(${url})`,
+        backgroundImage: `
+        linear-gradient(0deg, #000, Transparent 25%, Transparent 75%, #000),            
+        linear-gradient(90deg, #000, Transparent 33%, Transparent 66%, #000),            
+        url(${url})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
@@ -17,10 +18,12 @@ const FancyCard = ({ title = "", url = "", pos = "50% 50%", children }) => {
         style={{
           scrollSnapAlign: "start",
         }}
-        className="m-4 p-2 rounded-lg h-screen flex flex-col justify-between bg-slate-400/60 "
+        className="m-4 p-2 rounded-lg h-screen flex flex-col justify-between "
       >
         <div>{title}</div>
-        <div className=" self-end text-right">{children}</div>
+        <div className=" self-end text-right drop-shadow bg-slate-400/60 p-2 rounded-2xl">
+          {children}
+        </div>
       </div>
     </div>
   );

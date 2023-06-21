@@ -1,5 +1,7 @@
 import React from "react";
 import FancyCard from "../../Components/FancyCard/FancyCard";
+import DropDown from "../../Components/DropDown/DropDown";
+import Result from "../../Components/Result/Result.jsx";
 
 const Aventura = () => {
   return (
@@ -20,37 +22,44 @@ const Aventura = () => {
           Cuando intentes algo arriesgado o reaccionas a una amenaza inminente,
           visualiza tu acción y tira.
         </p>
-        <p>Si actúas:</p>
-        <ul>
-          <li>▶ Con rapidez, agilidad o precisión, tira + filo.</li>
-          <li>▶ Con sigilo,engaño o artimañas, tira + sombra.</li>
-          <li>▶ Con carisma,lealtad o coraje, tira + corazón.</li>
-          <li>
-            ▶ Con una acción agresiva, una defensa enérgica, fuerza o
-            resistencia, tira + hierro.
-          </li>
-          <li>
-            ▶ Conocimientos, perspicacia u observación, tira + mente. Éxito
-            Total: Lo consigues o evitas la amenaza. Ganas +1 a Impulso.
-          </li>
-        </ul>
-        <p>Éxito Parcial: Tienes éxito, pero con un coste.</p>
-        <p>Elige una:</p>
-        <ul>
-          <li>
-            ◆ No llegas a tiempo.Se desvanece tu ventaja o enfrentas un nuevo
-            peligro: Pierdes -1 Impulso. ◆ Estas agotado o herido: Soportar el
-            daño (1 de daño).
-          </li>
-          <li>
-            ◆ Estás asustado o desanimado: Soportar el estrés (1 de estrés).
-          </li>
-          <li>◆ Gastas recursos: Pierdes -1 de suministros.</li>
-        </ul>
-        <p>
-          Fallo: Fracasas o tu progreso se ve obstaculizado por un giro
-          dramático de los acontecimientos. Paga el precio.
-        </p>
+        <DropDown title={<p>Si actúas:</p>}>
+          <ul>
+            <li>▶ Con rapidez, agilidad o precisión, tira + filo.</li>
+            <li>▶ Con sigilo,engaño o artimañas, tira + sombra.</li>
+            <li>▶ Con carisma,lealtad o coraje, tira + corazón.</li>
+            <li>
+              ▶ Con una acción agresiva, una defensa enérgica, fuerza o
+              resistencia, tira + hierro.
+            </li>
+            <li>▶ Conocimientos, perspicacia u observación, tira + mente.</li>
+          </ul>
+        </DropDown>
+        <Result exito>
+          <p>Lo consigues o evitas la amenaza.</p>
+          <p>Ganas +1 a Impulso.</p>
+        </Result>
+        <Result semi>
+          <p>Tienes éxito, pero con un coste.</p>
+        </Result>
+        <DropDown title={<p>Elige una:</p>}>
+          <ul>
+            <li>
+              ◆ No llegas a tiempo.Se desvanece tu ventaja o enfrentas un nuevo
+              peligro: Pierdes -1 Impulso. ◆ Estas agotado o herido: Soportar el
+              daño (1 de daño).
+            </li>
+            <li>
+              ◆ Estás asustado o desanimado: Soportar el estrés (1 de estrés).
+            </li>
+            <li>◆ Gastas recursos: Pierdes -1 de suministros.</li>
+          </ul>
+        </DropDown>
+        <Result fallo>
+          <p>
+            Fracasas o tu progreso se ve obstaculizado por un giro dramático de
+            los acontecimientos. Paga el precio.
+          </p>
+        </Result>
       </FancyCard>
       <FancyCard
         title={"CREAR UNA VENTAJA"}
@@ -58,28 +67,40 @@ const Aventura = () => {
       >
         <p>
           Cuando analizas una situación, te preparas o intentas mejorar tu
-          efectividad, concreta como y tira. Si actúas...
+          efectividad, concreta como y tira.
         </p>
-        <ul>
-          <li>▶ Con rapidez, agilidad o precisión, tira + filo.</li>
-          <li>▶ Con carisma, lealtad o coraje, tira + corazón.</li>
-          <li>
-            ▶ Con acción agresiva, una defensa enérgica, fuerza o resistencia,
-            tira + hierro.
-          </li>
-          <li>▶ Con sigilo, engaño o artimañas, tira + sombra.</li>
-          <li>▶ Conocimientos, perspicacia u observación, tira + mente.</li>
-        </ul>
-        <p>Éxito Total: Ganas una ventaja. Elige una:</p>
-        <ul>
-          <li>
-            ◆ Tomas el control: Haz otro movimiento inmediatamente (no de
-            progreso) Al hacerlo suma +1.
-          </li>
-          <li>◆ Te preparas para actuar: Ganas +2 de impulso.</li>
-        </ul>
-        <p>Éxito Parcial: Tu ventaja es transitoria. Ganas +1 de impulso.</p>
-        <p>Fallo: Fracasas o tus suposiciones te la juegan. Paga el precio.</p>
+        <DropDown title={"Si actúas..."}>
+          <ul>
+            <li>▶ Con rapidez, agilidad o precisión, tira + filo.</li>
+            <li>▶ Con carisma, lealtad o coraje, tira + corazón.</li>
+            <li>
+              ▶ Con acción agresiva, una defensa enérgica, fuerza o resistencia,
+              tira + hierro.
+            </li>
+            <li>▶ Con sigilo, engaño o artimañas, tira + sombra.</li>
+            <li>▶ Conocimientos, perspicacia u observación, tira + mente.</li>
+          </ul>
+        </DropDown>
+        <Result exito>
+          <p>Éxito Total: Ganas una ventaja.</p>
+          <DropDown title={"Elige una:"}>
+            <ul>
+              <li>
+                ◆ Tomas el control: Haz otro movimiento inmediatamente (no de
+                progreso) Al hacerlo suma +1.
+              </li>
+              <li>◆ Te preparas para actuar: Ganas +2 de impulso.</li>
+            </ul>
+          </DropDown>
+        </Result>
+        <Result semi>
+          <p>Éxito Parcial: Tu ventaja es transitoria. Ganas +1 de impulso.</p>
+        </Result>
+        <Result fallo>
+          <p>
+            Fallo: Fracasas o tus suposiciones te la juegan. Paga el precio.
+          </p>
+        </Result>
       </FancyCard>
       <FancyCard
         title="REUNIR INFORMACIÓN"
@@ -91,21 +112,29 @@ const Aventura = () => {
           comunidad o haces preguntas a alguien con quien compartes un vínculo,
           suma +1.
         </p>
-        <p>
-          Éxito Total: Descubres algo útil y específico. El camino que debes
-          seguir o lo que debes hacer para progresar queda claro. Imagina lo que
-          descubres, y en caso de tener dudas Pregunta al Oráculo. Ganas +2 de
-          impulso.
-        </p>
-        <p>
-          Éxito Parcial: La información complica tu búsqueda o introduce un
-          nuevo peligro. Imagina que descubres (o Pregunta al Oráculo). Ganas +1
-          de impulso.
-        </p>
-        <p>
-          Fallo: Tu investigación descubre una amenaza grave o revela una verdad
-          incómoda que compromete tu búsqueda. Paga el precio.
-        </p>
+        <Result exito>
+          <p>
+            Éxito Total: Descubres algo útil y específico. El camino que debes
+            seguir o lo que debes hacer para progresar queda claro. Imagina lo
+            que descubres, y en caso de tener dudas Pregunta al Oráculo. Ganas
+            +2 de impulso.
+          </p>
+        </Result>
+        <Result semi>
+          <p>
+            Éxito Parcial: La información complica tu búsqueda o introduce un
+            nuevo peligro. Imagina que descubres (o Pregunta al Oráculo). Ganas
+            +1 de impulso.
+          </p>
+        </Result>
+        <Result fallo>
+          <p>
+            Fallo: Tu investigación descubre una amenaza grave o revela una
+            verdad incómoda que compromete tu búsqueda. Paga el precio.
+          </p>
+        </Result>
+      </FancyCard>
+      <FancyCard title="CURAR">
         <h1>CURAR</h1>
         <p>
           Cuando tratas una lesión o una dolencia, tira + mente. Si estás
@@ -142,27 +171,33 @@ const Aventura = () => {
         title="ACAMPAR"
         url="https://images.pexels.com/photos/2463815/pexels-photo-2463815.jpeg?auto=compress&cs=tinysrgb&w=600"
       >
-        <h1>ACAMPAR</h1>
         <p>
           Cuando descansas y te repones durante varias horas en la naturaleza,
           tira + suministros.
         </p>
-        <p>Éxito Total: Tu y cada aliado elegís dos.</p>
-        <p>Éxito Parcial: Elegís una:</p>
-        <ul>
-          <li> ◆ Recuperarte: Tú y tus compañeros ganáis +1 Salud.</li>
-          <li>
-            ◆ Compartir: Pierdes -1 de suministros y tanto tú como tus
-            compañeros ganáis +1 Salud.
-          </li>
-          <li>◆ Relajarte: Ganas +1 de entereza.</li>
-          <li>◆ Concentrarte: Ganas +1 impulso.</li>
-          <li>
-            ◆ Prepararte: Al abandonar el campamento, obtén una bonificación de
-            +1 si Emprendes un viaje.
-          </li>
-        </ul>
-        <p>Fallo: No hallas descanso. Paga el precio.</p>
+        <Result exito>
+          <p> Tu y cada aliado elegís dos.</p>
+        </Result>
+        <Result semi>
+          <DropDown title={"Elige una:"}>
+            <ul>
+              <li> ◆ Recuperarte: Tú y tus compañeros ganáis +1 Salud.</li>
+              <li>
+                ◆ Compartir: Pierdes -1 de suministros y tanto tú como tus
+                compañeros ganáis +1 Salud.
+              </li>
+              <li>◆ Relajarte: Ganas +1 de entereza.</li>
+              <li>◆ Concentrarte: Ganas +1 impulso.</li>
+              <li>
+                ◆ Prepararte: Al abandonar el campamento, obtén una bonificación
+                de +1 si Emprendes un viaje.
+              </li>
+            </ul>
+          </DropDown>
+        </Result>
+        <Result fallo>
+          <p>No hallas descanso. Paga el precio.</p>
+        </Result>
       </FancyCard>
       <FancyCard
         title="REVISAR TU EQUIPO"
