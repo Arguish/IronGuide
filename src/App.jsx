@@ -9,7 +9,7 @@ function App() {
   const location = useLocation();
   return (
     <>
-      {location.pathname === "/" && <NavBar></NavBar>}
+      <NavBar></NavBar>
       <Directory></Directory>
       {location.pathname !== "/" && <NavBtn to="/" text="Home"></NavBtn>}
     </>

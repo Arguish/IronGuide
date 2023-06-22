@@ -18,15 +18,13 @@ const FancyCard = ({ title = "", url = "", pos = "50% 50%", children }) => {
         style={{
           scrollSnapAlign: "start",
         }}
-        className="m-4 p-2 rounded-lg h-screen flex flex-col justify-between "
+        className="m-4 p-2 rounded-lg h-screen flex flex-col justify-between items-end"
       >
-        <div>
-          <div className="font-rune self-center text-4xl text-center">
-            {title}
-          </div>
-          <p className="self-center text-center text-xs">{title}</p>
+        <div className="flex flex-col items-end">
+          <div className="font-rune text-4xl text-end w-4/5">{title}</div>
+          <p className=" text-center text-xs">{title}</p>
         </div>
-        <div className=" self-end text-right drop-shadow bg-slate-400/60 p-2 rounded-2xl">
+        <div className=" self-end drop-shadow bg-slate-400/60 p-2 rounded-2xl">
           {children}
         </div>
       </div>
