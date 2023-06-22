@@ -144,198 +144,235 @@ const Relacion = () => {
           </p>
         }
       />
-      <h1>TRAZAR EL CÍRCULO</h1>
-      <p>
-        Cuando desafías a alguien a un duelo formal o aceptas un desafío, tira +
-        corazón. Si compartes un vínculo con esta comunidad suma +1.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Ganas +1 de impulso. También puedes elegir
-        hasta tres alardes. Ganas +1 de impulso por cada uno de ellos.
-      </p>
-      <p>
-        <strong>Éxito Parcial:</strong> Puedes elegir un alarde. En tal caso,
-        ganas a cambio +1 de impulso.
-      </p>
-      <h3>Alardes:</h3>
-      <ul>
-        <li>
-          <strong>Conceder el primer golpe:</strong> Tu oponente tiene la
-          iniciativa.
-        </li>
-        <li>
-          <strong>Soltar el hierro:</strong> No te beneficias de armas; tu daño
-          es 1.
-        </li>
-        <li>
-          <strong>Descubrirse:</strong> Sin escudo ni armadura. Daño del
-          oponente +1.
-        </li>
-        <li>
-          <strong>Derramar tu sangre:</strong> Soportar el daño (1 de daño).
-        </li>
-        <li>
-          <strong>A muerte:</strong> El combate debe acabar con una muerte.
-        </li>
-      </ul>
-      <p>
-        <strong>Fallo:</strong> Comienzas el duelo en desventaja. Tu
-        contrincante tiene la iniciativa. Paga el precio.
-      </p>
-      <p>
-        A continuación, haz movimientos para resolver el combate. Si consigues
-        vencer, puedes manifestar una exigencia legítima y tu adversario debe
-        aceptarla o perder su honor y posición. Si rechazas el desafío, te
-        rindes o te derrotan, será tu rival quien exprese su exigencia.
-      </p>
-      <MovCard
-        title={""}
-        url={""}
-        description={""}
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
-      <MovCard
-        title={""}
-        url={""}
-        description={""}
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
-      <MovCard
-        title={""}
-        url={""}
-        description={""}
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
-      <MovCard
-        title={""}
-        url={""}
-        description={""}
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
-      <MovCard
-        title={""}
-        url={""}
-        description={""}
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
-      <MovCard
-        title={""}
-        url={""}
-        description={""}
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
 
-      <h1>FORJAR UN VÍNCULO</h1>
-      <p>
-        Si haces este movimiento después cuando pasas un tiempo considerable con
-        una persona o en una comunidad, trabajas en equipo para afrontar
-        dificultades o haces causa común sin importar los sacrificios, puedes
-        intentar crear un vínculo. Si lo intentas, tira + corazón. Si cumples tu
-        juramento en beneficio de la parte con la que intentas crear vínculo,
-        puedes volver a tirar cualquier dado.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Anota el vínculo, haz una marca en el
-        contador de progreso de tus vínculos y escoge una:
-      </p>
-      <ul>
-        <li>Ganas +1 de entereza.</li>
-        <li>Ganas +2 de impulso.</li>
-      </ul>
-      <p>
-        <strong>Éxito Parcial:</strong> Te piden algo primero. Imagina qué
-        podría ser o, si es necesario, pregunta al Oráculo. Dáselo o jura por el
-        hierro. 1 marca en contador de vínculos. Si te niegas o fallas, paga el
-        precio.
-      </p>
-      <p>
-        <strong>Fallo:</strong> Te rechazan. Paga el precio.
-      </p>
-
-      <h1>PONER A PRUEBA UN VÍNCULO</h1>
-      <p>
-        Cuando las circunstancias, un conflicto o una traición ponen a prueba
-        uno de tus vínculos, tira + corazón.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Las dificultades han reforzado el vínculo.
-        Elige una:
-      </p>
-      <ul>
-        <li>Ganas +1 de entereza.</li>
-        <li>Ganas +2 de impulso.</li>
-      </ul>
-      <p>
-        <strong>Éxito Parcial:</strong> El vínculo se debilita y debes demostrar
-        tu lealtad. Imagina qué podría necesitar la otra parte o pregunta al
-        Oráculo, y hazlo. Jura por el hierro que lo harás. Si no estás dispuesto
-        a hacerlo o fracasas, borra el vínculo y paga el precio.
-      </p>
-      <p>
-        <strong>Fallo:</strong> Borra el vínculo y paga el precio.
-      </p>
-      <p>
-        Si ya no tienes interés en mantener esta relación, borra el vínculo y
-        paga el precio.
-      </p>
-
-      <h1>AYUDAR A UN ALIADO</h1>
-      <p>
-        Cuando creas una ventaja con el fin de ayudar a un aliado y obtienes un
-        éxito (total o parcial), el aliado (en vez de ti) puede aprovecharse de
-        los beneficios del movimiento. Si estáis en combate y obtuviste un éxito
-        total, tanto tú como el personaje aliado lleváis la iniciativa.
-      </p>
-
-      <h1>HACER UNA PAUSA</h1>
-      <p>
-        Cuando pases mucho tiempo recuperándote en un lugar seguro mientras una
-        amenaza está activa, realiza una de las siguientes acciones:
-      </p>
-      <ul>
-        <li>Borra las condiciones marcadas.</li>
-        <li>
-          Establece tu salud, entereza, suministros y salud del compañero a sus
-          valores máximos.
-        </li>
-        <li>
-          Establece tu impulso a su valor de reinicio. Luego, para cada amenaza
-          activa, avanza una amenaza.
-        </li>
-      </ul>
-
-      <h1>ESCRIBIR TU EPÍLOGO (M. PROGRESO)</h1>
-      <p>
-        Cuando te retiras y dejas atrás tu vida de aventuras, búsquedas y
-        juramentos, responde: ¿Qué deseas que suceda? Después tira los dados de
-        desafío y compara el resultado con tu total de progreso en vínculos. No
-        tengas en cuenta el impulso en esta tirada. ¿Qué esperabas? ¿En qué
-        consiste ese giro? Pregunta al Oráculo.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Las cosas suceden tal y como deseas.
-      </p>
-      <p>
-        <strong>Éxito Parcial:</strong> Tu vida da un giro inesperado, pero no
-        necesariamente a peor. Te encuentras pasando tus días con alguien o en
-        un lugar que no esperabas. ¿En qué consiste ese giro? Pregunta al
-        Oráculo.
-      </p>
-      <p>
-        <strong>Fallo:</strong> Tus temores se hacen realidad.
-      </p>
+      <MovCard
+        title={"TRAZAR EL CÍRCULO"}
+        url={""}
+        description={
+          <p>
+            Cuando desafías a alguien a un duelo formal o aceptas un desafío,
+            tira + corazón. Si compartes un vínculo con esta comunidad suma +1.
+          </p>
+        }
+        exito={
+          <p>
+            <strong>Éxito Total:</strong> Ganas +1 de impulso. También puedes
+            elegir hasta tres alardes. Ganas +1 de impulso por cada uno de
+            ellos.
+          </p>
+        }
+        semi={
+          <div>
+            <p>
+              <strong>Éxito Parcial:</strong> Puedes elegir un alarde. En tal
+              caso, ganas a cambio +1 de impulso.
+            </p>
+            <DropDown title={<h3>Alardes:</h3>}>
+              <ul>
+                <li>
+                  <strong>Conceder el primer golpe:</strong> Tu oponente tiene
+                  la iniciativa.
+                </li>
+                <li>
+                  <strong>Soltar el hierro:</strong> No te beneficias de armas;
+                  tu daño es 1.
+                </li>
+                <li>
+                  <strong>Descubrirse:</strong> Sin escudo ni armadura. Daño del
+                  oponente +1.
+                </li>
+                <li>
+                  <strong>Derramar tu sangre:</strong> Soportar el daño (1 de
+                  daño).
+                </li>
+                <li>
+                  <strong>A muerte:</strong> El combate debe acabar con una
+                  muerte.
+                </li>
+              </ul>
+            </DropDown>
+          </div>
+        }
+        fallo={
+          <div>
+            <p>
+              <strong>Fallo:</strong> Comienzas el duelo en desventaja. Tu
+              contrincante tiene la iniciativa. Paga el precio.
+            </p>
+            <p>
+              A continuación, haz movimientos para resolver el combate. Si
+              consigues vencer, puedes manifestar una exigencia legítima y tu
+              adversario debe aceptarla o perder su honor y posición. Si
+              rechazas el desafío, te rindes o te derrotan, será tu rival quien
+              exprese su exigencia.
+            </p>
+          </div>
+        }
+      />
+      <MovCard
+        title={<h1>FORJAR UN VÍNCULO</h1>}
+        url={""}
+        description={
+          <p>
+            Si haces este movimiento después cuando pasas un tiempo considerable
+            con una persona o en una comunidad, trabajas en equipo para afrontar
+            dificultades o haces causa común sin importar los sacrificios,
+            puedes intentar crear un vínculo. Si lo intentas, tira + corazón. Si
+            cumples tu juramento en beneficio de la parte con la que intentas
+            crear vínculo, puedes volver a tirar cualquier dado.
+          </p>
+        }
+        exito={
+          <>
+            <p>
+              <strong>Éxito Total:</strong> Anota el vínculo, haz una marca en
+              el contador de progreso de tus vínculos y...
+            </p>
+            <DropDown title={"escoge una:"}>
+              <ul>
+                <li>Ganas +1 de entereza.</li>
+                <li>Ganas +2 de impulso.</li>
+              </ul>
+            </DropDown>
+          </>
+        }
+        semi={
+          <p>
+            <strong>Éxito Parcial:</strong> Te piden algo primero. Imagina qué
+            podría ser o, si es necesario, pregunta al Oráculo. Dáselo o jura
+            por el hierro. 1 marca en contador de vínculos. Si te niegas o
+            fallas, paga el precio.
+          </p>
+        }
+        fallo={
+          <p>
+            <strong>Fallo:</strong> Te rechazan. Paga el precio.
+          </p>
+        }
+      />
+      <MovCard
+        title={<h1>PONER A PRUEBA UN VÍNCULO</h1>}
+        url={""}
+        description={
+          <p>
+            Cuando las circunstancias, un conflicto o una traición ponen a
+            prueba uno de tus vínculos, tira + corazón.
+          </p>
+        }
+        exito={
+          <>
+            <p>
+              <strong>Éxito Total:</strong> Las dificultades han reforzado el
+              vínculo.
+            </p>
+            <DropDown title={"Elige una:"}>
+              <ul>
+                <li>Ganas +1 de entereza.</li>
+                <li>Ganas +2 de impulso.</li>
+              </ul>
+            </DropDown>
+          </>
+        }
+        semi={
+          <p>
+            <strong>Éxito Parcial:</strong> El vínculo se debilita y debes
+            demostrar tu lealtad. Imagina qué podría necesitar la otra parte o
+            pregunta al Oráculo, y hazlo. Jura por el hierro que lo harás. Si no
+            estás dispuesto a hacerlo o fracasas, borra el vínculo y paga el
+            precio.
+          </p>
+        }
+        fallo={
+          <div>
+            <p>
+              <strong>Fallo:</strong> Borra el vínculo y paga el precio.
+            </p>
+            <p>
+              Si ya no tienes interés en mantener esta relación, borra el
+              vínculo y paga el precio.
+            </p>
+          </div>
+        }
+      />
+      <MovCard
+        title={<h1>AYUDAR A UN ALIADO</h1>}
+        url={""}
+        description={
+          <p>
+            Cuando creas una ventaja con el fin de ayudar a un aliado y obtienes
+            un éxito (total o parcial), el aliado (en vez de ti) puede
+            aprovecharse de los beneficios del movimiento. Si estáis en combate
+            y obtuviste un éxito total, tanto tú como el personaje aliado
+            lleváis la iniciativa.
+          </p>
+        }
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={<h1>HACER UNA PAUSA</h1>}
+        url={""}
+        description={
+          <>
+            <p>
+              Cuando pases mucho tiempo recuperándote en un lugar seguro
+              mientras una amenaza está activa...
+            </p>
+            <DropDown title={"realiza una de las siguientes acciones:"}>
+              <ul>
+                <li>Borra las condiciones marcadas.</li>
+                <li>
+                  Establece tu salud, entereza, suministros y salud del
+                  compañero a sus valores máximos.
+                </li>
+                <li>
+                  Establece tu impulso a su valor de reinicio. Luego, para cada
+                  amenaza activa, avanza una amenaza.
+                </li>
+              </ul>
+            </DropDown>
+          </>
+        }
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={
+          <h1>
+            ESCRIBIR TU EPÍLOGO <br /> (M. PROGRESO)
+          </h1>
+        }
+        url={""}
+        description={
+          <p>
+            Cuando te retiras y dejas atrás tu vida de aventuras, búsquedas y
+            juramentos, responde: ¿Qué deseas que suceda? Después tira los dados
+            de desafío y compara el resultado con tu total de progreso en
+            vínculos. No tengas en cuenta el impulso en esta tirada. ¿Qué
+            esperabas? ¿En qué consiste ese giro? Pregunta al Oráculo.
+          </p>
+        }
+        exito={
+          <p>
+            <strong>Éxito Total:</strong> Las cosas suceden tal y como deseas.
+          </p>
+        }
+        semi={
+          <p>
+            <strong>Éxito Parcial:</strong> Tu vida da un giro inesperado, pero
+            no necesariamente a peor. Te encuentras pasando tus días con alguien
+            o en un lugar que no esperabas. ¿En qué consiste ese giro? Pregunta
+            al Oráculo.
+          </p>
+        }
+        fallo={
+          <p>
+            <strong>Fallo:</strong> Tus temores se hacen realidad.
+          </p>
+        }
+      />
     </div>
   );
 };
