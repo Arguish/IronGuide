@@ -1,109 +1,149 @@
 import React from "react";
+import MovCard from "../../Components/MovCard/MovCard";
+import DropDown from "../../Components/DropDown/DropDown";
 
 const Relacion = () => {
   return (
-    <div>
-      <h1>PERSUADIR</h1>
-      <p>
-        Cuando intentas persuadir a alguien de que haga algo, imagina cómo
-        podrías lograrlo y tira. Si...
-      </p>
-      <p>
-        <strong>
-          Recurres a tu carisma, ofreces algo a cambio, convences o
-          tranquilizas:
-        </strong>{" "}
-        Tira + corazón (+1 si compartís vínculo).
-      </p>
-      <p>
-        <strong>Amenazas/provocas:</strong> Tira + hierro.
-      </p>
-      <p>
-        <strong>Mientes o engañas:</strong> Tira + sombra.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Hace lo que quieres o comparte lo que
-        sabe. Ganas +1 de impulso. Si aprovechas la coyuntura para Reunir
-        Información haz ese movimiento ahora y suma +1.
-      </p>
-      <p>
-        <strong>Éxito Parcial:</strong> Como arriba, pero te pide algo a cambio.
-        Concreta qué es lo que quiere o pregunta al Oráculo.
-      </p>
-      <p>
-        <strong>Fallo:</strong> No cede o te exige algo muy costoso a cambio.
-        Paga el precio.
-      </p>
+    <div
+      className="h-screen flex-col gap-2"
+      style={{
+        overflow: "scroll",
+        scrollSnapType: "y mandatory",
+      }}
+    >
+      <MovCard
+        title={<h1>PERSUADIR</h1>}
+        url={
+          "https://images.pexels.com/photos/3729861/pexels-photo-3729861.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
+        description={
+          <div>
+            <p>
+              Cuando intentas persuadir a alguien de que haga algo, imagina cómo
+              podrías lograrlo y tira. Si...
+            </p>
 
-      <h1>PASAR EL TIEMPO EN UNA COMUNIDAD</h1>
-      <p>
-        Cuando pases tiempo en una comunidad buscando ayuda, tira +corazón. Si
-        compartes un vínculo, añade +1.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Tú y cada aliado podéis elegir dos
-        opciones de entre las categorías que se presentan más abajo. Quienes
-        compartan vínculo con la comunidad pueden escoger tres.
-      </p>
-      <p>
-        <strong>Éxito Parcial:</strong> Podéis elegir solo una opción. Además,
-        quienes compartan vínculo con la comunidad pueden escoger dos opciones.
-      </p>
-      <h2>Eliminar una condición</h2>
-      <ul>
-        <li>
-          <strong>Recuperarse:</strong> El personaje ya no está herido. +1
-          Salud.
-        </li>
-        <li>
-          <strong>Reconfortarse:</strong> El personaje ya no está conmocionado.
-          +1 entereza.
-        </li>
-        <li>
-          <strong>Equiparse:</strong> El personaje ya no está sin suministros.
-          +1 suministros.
-        </li>
-      </ul>
-      <h2>Recuperación</h2>
-      <ul>
-        <li>
-          <strong>Reponerse:</strong> Tú y tus compañeros ganáis +2 de Salud.
-        </li>
-        <li>
-          <strong>Relacionarse:</strong> +2 de entereza.
-        </li>
-        <li>
-          <strong>Aprovisionarse:</strong> +2 suministros.
-        </li>
-        <li>
-          <strong>Planificar:</strong> +2 impulso.
-        </li>
-      </ul>
-      <h2>Prestar ayuda</h2>
-      <p>
-        <strong>Iniciar una búsqueda:</strong> Establece lo que podría necesitar
-        la comunidad o sus problemas. Pregunta al Oráculo. Si ayudas, usa Jurar
-        por el hierro y suma +1 al hacerlo.
-      </p>
-      <p>
-        Con un éxito, tenéis opción de volver a tirar + corazón en una de las
-        acciones de "recuperación" elegidas. Los que tengan vínculo con la
-        comunidad suman +1.
-      </p>
-      <p>
-        <strong>Éxito Total:</strong> Ganas +2 más por esa acción.
-      </p>
-      <p>
-        <strong>Éxito Parcial:</strong> Ganas +1 más por esa acción.
-      </p>
-      <p>
-        <strong>Fallo:</strong> Va mal. Pierde todos los beneficios por esa
-        acción.
-      </p>
-      <p>
-        <strong>Fallo:</strong> No encuentras ayuda. Paga el precio.
-      </p>
+            <p>
+              <strong>
+                Recurres a tu carisma, ofreces algo a cambio, convences o
+                tranquilizas:
+              </strong>{" "}
+              Tira + corazón (+1 si compartís vínculo).
+            </p>
+            <p>
+              <strong>Amenazas/provocas:</strong> Tira + hierro.
+            </p>
+            <p>
+              <strong>Mientes o engañas:</strong> Tira + sombra.
+            </p>
+          </div>
+        }
+        exito={
+          <p>
+            <strong>Éxito Total:</strong> Hace lo que quieres o comparte lo que
+            sabe. Ganas +1 de impulso. Si aprovechas la coyuntura para Reunir
+            Información haz ese movimiento ahora y suma +1.
+          </p>
+        }
+        semi={
+          <p>
+            <strong>Éxito Parcial:</strong> Como arriba, pero te pide algo a
+            cambio. Concreta qué es lo que quiere o pregunta al Oráculo.
+          </p>
+        }
+        fallo={
+          <p>
+            <strong>Fallo:</strong> No cede o te exige algo muy costoso a
+            cambio. Paga el precio.
+          </p>
+        }
+      ></MovCard>
 
+      <MovCard
+        title={<h1>PASAR EL TIEMPO EN UNA COMUNIDAD</h1>}
+        url={""}
+        description={
+          <p>
+            Cuando pases tiempo en una comunidad buscando ayuda, tira +corazón.
+            Si compartes un vínculo, añade +1.
+          </p>
+        }
+        exito={
+          <p>
+            <strong>Éxito Total:</strong> Tú y cada aliado podéis elegir dos
+            opciones de entre las categorías que se presentan más abajo. Quienes
+            compartan vínculo con la comunidad pueden escoger tres.
+          </p>
+        }
+        semi={
+          <div>
+            <p>
+              <strong>Éxito Parcial:</strong> Podéis elegir solo una opción.
+              Además, quienes compartan vínculo con la comunidad pueden escoger
+              dos opciones.
+            </p>
+            <DropDown>
+              <h2>Eliminar una condición</h2>
+              <ul>
+                <li>
+                  <strong>Recuperarse:</strong> El personaje ya no está herido.
+                  +1 Salud.
+                </li>
+                <li>
+                  <strong>Reconfortarse:</strong> El personaje ya no está
+                  conmocionado. +1 entereza.
+                </li>
+                <li>
+                  <strong>Equiparse:</strong> El personaje ya no está sin
+                  suministros. +1 suministros.
+                </li>
+              </ul>
+              <h2>Recuperación</h2>
+              <ul>
+                <li>
+                  <strong>Reponerse:</strong> Tú y tus compañeros ganáis +2 de
+                  Salud.
+                </li>
+                <li>
+                  <strong>Relacionarse:</strong> +2 de entereza.
+                </li>
+                <li>
+                  <strong>Aprovisionarse:</strong> +2 suministros.
+                </li>
+                <li>
+                  <strong>Planificar:</strong> +2 impulso.
+                </li>
+              </ul>
+              <h2>Prestar ayuda</h2>
+              <p>
+                <strong>Iniciar una búsqueda:</strong> Establece lo que podría
+                necesitar la comunidad o sus problemas. Pregunta al Oráculo. Si
+                ayudas, usa Jurar por el hierro y suma +1 al hacerlo.
+              </p>
+              <p>
+                Con un éxito, tenéis opción de volver a tirar + corazón en una
+                de las acciones de "recuperación" elegidas. Los que tengan
+                vínculo con la comunidad suman +1.
+              </p>
+              <p>
+                <strong>Éxito Total:</strong> Ganas +2 más por esa acción.
+              </p>
+              <p>
+                <strong>Éxito Parcial:</strong> Ganas +1 más por esa acción.
+              </p>
+              <p>
+                <strong>Fallo:</strong> Va mal. Pierde todos los beneficios por
+                esa acción.
+              </p>
+            </DropDown>
+          </div>
+        }
+        fallo={
+          <p>
+            <strong>Fallo:</strong> No encuentras ayuda. Paga el precio.
+          </p>
+        }
+      />
       <h1>TRAZAR EL CÍRCULO</h1>
       <p>
         Cuando desafías a alguien a un duelo formal o aceptas un desafío, tira +
@@ -148,6 +188,55 @@ const Relacion = () => {
         aceptarla o perder su honor y posición. Si rechazas el desafío, te
         rindes o te derrotan, será tu rival quien exprese su exigencia.
       </p>
+      <MovCard
+        title={""}
+        url={""}
+        description={""}
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={""}
+        url={""}
+        description={""}
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={""}
+        url={""}
+        description={""}
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={""}
+        url={""}
+        description={""}
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={""}
+        url={""}
+        description={""}
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+      <MovCard
+        title={""}
+        url={""}
+        description={""}
+        exito={""}
+        semi={""}
+        fallo={""}
+      />
+
       <h1>FORJAR UN VÍNCULO</h1>
       <p>
         Si haces este movimiento después cuando pasas un tiempo considerable con
