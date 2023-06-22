@@ -134,23 +134,31 @@ const Aventura = () => {
           </p>
         </Result>
       </FancyCard>
-      <FancyCard title="CURAR">
-        <h1>CURAR</h1>
+      <FancyCard
+        title="CURAR"
+        url="https://images.pexels.com/photos/13719328/pexels-photo-13719328.jpeg?auto=compress&cs=tinysrgb&w=600"
+      >
         <p>
           Cuando tratas una lesión o una dolencia, tira + mente. Si estás
           tratando tus propias heridas, tira + mente o + hierro, la que sea
           menor.
         </p>
-        <p>
-          Éxito Total: El tratamiento funciona. Si tu personaje o el personaje
-          aliado que tratas está herido, puedes eliminar dicha condición.
-          Después, tu personaje o el aliado gana +2 de salud.
-        </p>
-        <p>
-          Éxito Parcial: Como arriba, pero pierdes -1 de suministros o -1 de
-          impulso, a tu elección.
-        </p>
-        <p>Fallo: El tratamiento es ineficaz. Paga el precio</p>
+        <Result exito>
+          <p>
+            Éxito Total: El tratamiento funciona. Si tu personaje o el personaje
+            aliado que tratas está herido, puedes eliminar dicha condición.
+            Después, tu personaje o el aliado gana +2 de salud.
+          </p>
+        </Result>
+        <Result semi>
+          <p>
+            Éxito Parcial: Como arriba, pero pierdes -1 de suministros o -1 de
+            impulso, a tu elección.
+          </p>
+        </Result>
+        <Result fallo>
+          <p>Fallo: El tratamiento es ineficaz. Paga el precio</p>
+        </Result>
       </FancyCard>
       <FancyCard
         title="REABASTECERSE"
@@ -160,12 +168,18 @@ const Aventura = () => {
           Cuando cazas, recoges alimentos o buscas para encontrar algo útil,
           tira + mente.
         </p>
-        <p>Éxito Total: Aumentas tus suministros. Ganas +2 suministros.</p>
-        <p>
-          Éxito Parcial: Ganas hasta +2 de suministros, pero pierdes -1 de
-          impulso por cada punto ganado.
-        </p>
-        <p>Fallo: No encuentras nada de útil. Paga el precio.</p>
+        <Result exito>
+          <p>Éxito Total: Aumentas tus suministros. Ganas +2 suministros.</p>
+        </Result>
+        <Result semi>
+          <p>
+            Éxito Parcial: Ganas hasta +2 de suministros, pero pierdes -1 de
+            impulso por cada punto ganado.
+          </p>
+        </Result>
+        <Result fallo>
+          <p>Fallo: No encuentras nada de útil. Paga el precio.</p>
+        </Result>
       </FancyCard>
       <FancyCard
         title="ACAMPAR"
@@ -203,20 +217,25 @@ const Aventura = () => {
         title="REVISAR TU EQUIPO"
         url="https://images.pexels.com/photos/5023638/pexels-photo-5023638.jpeg?auto=compress&cs=tinysrgb&w=600"
       >
-        <h1>REVISAR TU EQUIPO</h1>
         <p>
           Cuando miras si tienes un objeto de utilidad en concreto, y tienes al
           menos +1 en suministros, tira + suministros.
         </p>
-        <p>Éxito Total: Lo tienes. Ganas +1 en impulso.</p>
-        <p>
-          Éxito Parcial: Lo tienes, pero tus recursos disminuyen. Ganas +1 a
-          impulso y -1 a suministros.
-        </p>
-        <p>
-          Fallo: No lo tienes y la situación se vuelve todavía más peligrosa
-          Paga el precio.
-        </p>
+        <Result exito>
+          <p>Éxito Total: Lo tienes. Ganas +1 en impulso.</p>
+        </Result>
+        <Result semi>
+          <p>
+            Éxito Parcial: Lo tienes, pero tus recursos disminuyen. Ganas +1 a
+            impulso y -1 a suministros.
+          </p>
+        </Result>
+        <Result fallo>
+          <p>
+            Fallo: No lo tienes y la situación se vuelve todavía más peligrosa
+            Paga el precio.
+          </p>
+        </Result>
       </FancyCard>
       <FancyCard
         url="https://images.pexels.com/photos/13472190/pexels-photo-13472190.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -226,62 +245,87 @@ const Aventura = () => {
           Cuando viajas por tierras desconocidas o peligrosas, primero determina
           el nivel de desafio de tu viaje.
         </p>
-        <ul>
-          <li>◆ Viaje problemático: 3 casillas para cada lugar de paso.</li>
-          <li>◆ Viaje peligroso: 2 casillas por cada lugar de paso.</li>
-          <li>◆ Viaje formidable: 1 casilla por cada lugar de paso.</li>
-          <li>◆ Viaje extremo: 2 marcas por cada lugar de paso.</li>
-          <li>
-            ◆ Viaje épico: 1 marca por cada lugar de paso. Después, para cada
-            tramo del viaje, tira + mente. Si partes de una comunidad con la que
-            tienes un vínculo, suma +1 a la tirada inicial.
-          </li>
-        </ul>
-        Éxito Total: Llegas a un lugar de paso en tu viaje. Si no conoces el
-        lugar, imagina como es o Pregunta al Oráculo. A continuación, escoge
-        una:
-        <ul>
-          <li> ◆ Haces un buen uso de tus recursos. Registra el progreso.</li>
-          <li>
-            ◆ Fuerzas la marcha: Registras el progreso y ganas +1 de impulso,
-            pero pierdes -1 de suministros.
-          </li>
-        </ul>
-        <p>
-          Éxito Parcial: Alcanzas un lugar de paso. Registra el progreso, pero
-          pierdes -1 de suministros.
-        </p>
-        <p>Fallo: Viaje interrumpido por un acontecimiento. Paga el precio.</p>
+        <DropDown title={"Nivel de desafio"}>
+          <ul>
+            <li>◆ Viaje problemático: 3 casillas para cada lugar de paso.</li>
+            <li>◆ Viaje peligroso: 2 casillas por cada lugar de paso.</li>
+            <li>◆ Viaje formidable: 1 casilla por cada lugar de paso.</li>
+            <li>◆ Viaje extremo: 2 marcas por cada lugar de paso.</li>
+            <li>
+              ◆ Viaje épico: 1 marca por cada lugar de paso. Después, para cada
+              tramo del viaje, tira + mente. Si partes de una comunidad con la
+              que tienes un vínculo, suma +1 a la tirada inicial.
+            </li>
+          </ul>
+        </DropDown>
+        <Result exito>
+          Éxito Total: Llegas a un lugar de paso en tu viaje. Si no conoces el
+          lugar, imagina como es o Pregunta al Oráculo. A continuación...
+          <DropDown title={"Escoge una:"}>
+            <ul>
+              <li>
+                {" "}
+                ◆ Haces un buen uso de tus recursos. Registra el progreso.
+              </li>
+              <li>
+                ◆ Fuerzas la marcha: Registras el progreso y ganas +1 de
+                impulso, pero pierdes -1 de suministros.
+              </li>
+            </ul>
+          </DropDown>
+        </Result>
+        <Result semi>
+          <p>
+            Éxito Parcial: Alcanzas un lugar de paso. Registra el progreso, pero
+            pierdes -1 de suministros.
+          </p>
+        </Result>
+        <Result fallo>
+          <p>
+            Fallo: Viaje interrumpido por un acontecimiento. Paga el precio.
+          </p>
+        </Result>
       </FancyCard>
       <FancyCard
-        title="ALCANZAR TU DESTINO (M. PROGRESO)"
+        title={
+          <h1>
+            ALCANZAR TU DESTINO <br /> (M. PROGRESO)
+          </h1>
+        }
         url="https://images.pexels.com/photos/11116012/pexels-photo-11116012.jpeg?auto=compress&cs=tinysrgb&w=600"
       >
         <p>
           Cuando tu viaje llega a su fin, tira los dados de desafío y compáralos
           con tu progreso. No tengas en cuenta el impulso.
         </p>
-        <p>
-          Éxito Total: La situación al llegar te es propicia. Escoge una: ◆ Haz
-          otro movimiento ahora (no de progreso) y suma +1.
-        </p>
-        <ul>
-          <li>◆ Ganas +1 de impulso.</li>
-        </ul>
-        <p>
-          Éxito Parcial: Llegas a tu destino, pero te enfrentas a imprevistos en
-          forma de peligros o complicaciones. Concrétalos o Pregunta al Oráculo.
-        </p>
-        <p>
-          Fallo: O bien te has perdido sin remedio; o bien una vez allí se
-          revela que no ha servido de nada llegar, o tu información sobre el
-          destino no era correcta.
-        </p>
-        <p>
-          Si el viaje continúa, elimina todo el progreso salvo una casilla (4
-          marcas) y aumenta el nivel de desafío del viaje en uno (excepto si ya
-          era épico).
-        </p>
+        <Result exito>
+          <p>Éxito Total: La situación al llegar te es propicia.</p>
+          <DropDown title={"Escoge una:"}>
+            <ul>
+              <li>◆ Haz otro movimiento ahora (no de progreso) y suma +1.</li>
+              <li>◆ Ganas +1 de impulso.</li>
+            </ul>
+          </DropDown>
+        </Result>
+        <Result semi>
+          <p>
+            Éxito Parcial: Llegas a tu destino, pero te enfrentas a imprevistos
+            en forma de peligros o complicaciones. Concrétalos o Pregunta al
+            Oráculo.
+          </p>
+        </Result>
+        <Result fallo>
+          <p>
+            Fallo: O bien te has perdido sin remedio; o bien una vez allí se
+            revela que no ha servido de nada llegar, o tu información sobre el
+            destino no era correcta.
+          </p>
+          <p>
+            Si el viaje continúa, elimina todo el progreso salvo una casilla (4
+            marcas) y aumenta el nivel de desafío del viaje en uno (excepto si
+            ya era épico).
+          </p>
+        </Result>
       </FancyCard>
     </div>
   );
