@@ -8,14 +8,17 @@ const NavBar = () => {
   };
   return (
     <div
-      className={` absolute z-50 bg-slate-900 px-2 
+      className={` absolute z-50 bg-slate-900 px-2 select-none
         ${
           toggle
             ? "rounded-none top-0 left-0 mx-0 h-screen"
             : "rounded-full mx-1"
         }`}
     >
-      <h1 className="font-rune text-6xl my-1 mx-1 " onClick={togle}>
+      <h1
+        className="font-rune text-6xl my-1 mx-1  cursor-pointer "
+        onClick={togle}
+      >
         {toggle ? "X" : "O"}
       </h1>
       {toggle && (

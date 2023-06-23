@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const DropDown = ({ title, children }) => {
+const DropDown = ({ title = "Elige una...", children }) => {
   const [show, setshow] = useState(false);
   const toggle = () => setshow(!show);
 
   return (
     <div
-      className={` drop-shadow-lg w-full m-2
+      className={` drop-shadow-lg w-full m-auto
     `}
     >
       <div

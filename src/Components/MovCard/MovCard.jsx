@@ -10,11 +10,12 @@ const MovCard = ({
   exito = "",
   semi = "",
   fallo = "",
+  children,
 }) => {
   return (
     <>
       <FancyCard title={title} url={url}>
-        <p>{description}</p>
+        <div>{children ? children : description}</div>
         <Result exito>{exito}</Result>
         <Result semi>{semi}</Result>
         <Result fallo>{fallo}</Result>

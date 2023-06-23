@@ -1,5 +1,6 @@
 import React from "react";
 import MovCard from "../../Components/MovCard/MovCard";
+import FancyCard from "../../Components/FancyCard/FancyCard";
 import DropDown from "../../Components/DropDown/DropDown";
 
 const Relacion = () => {
@@ -14,28 +15,29 @@ const Relacion = () => {
       <MovCard
         title={<h1>PERSUADIR</h1>}
         url={
-          "https://images.pexels.com/photos/3729861/pexels-photo-3729861.jpeg?auto=compress&cs=tinysrgb&w=600"
+          "https://images.unsplash.com/photo-1528319021065-884517564d7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUxfHx2aWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         }
         description={
           <div>
             <p>
               Cuando intentas persuadir a alguien de que haga algo, imagina cómo
-              podrías lograrlo y tira. Si...
+              podrías lograrlo y tira.
             </p>
-
-            <p>
-              <strong>
-                Recurres a tu carisma, ofreces algo a cambio, convences o
-                tranquilizas:
-              </strong>{" "}
-              Tira + corazón (+1 si compartís vínculo).
-            </p>
-            <p>
-              <strong>Amenazas/provocas:</strong> Tira + hierro.
-            </p>
-            <p>
-              <strong>Mientes o engañas:</strong> Tira + sombra.
-            </p>
+            <DropDown title={"Si..."}>
+              <p>
+                <strong>
+                  Recurres a tu carisma, ofreces algo a cambio, convences o
+                  tranquilizas:
+                </strong>{" "}
+                Tira + corazón (+1 si compartís vínculo).
+              </p>
+              <p>
+                <strong>Amenazas/provocas:</strong> Tira + hierro.
+              </p>
+              <p>
+                <strong>Mientes o engañas:</strong> Tira + sombra.
+              </p>
+            </DropDown>
           </div>
         }
         exito={
@@ -60,8 +62,8 @@ const Relacion = () => {
       ></MovCard>
 
       <MovCard
+        url="https://images.unsplash.com/photo-1661738357258-e3f2a56e59ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg0fHx2aWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         title={<h1>PASAR EL TIEMPO EN UNA COMUNIDAD</h1>}
-        url={""}
         description={
           <p>
             Cuando pases tiempo en una comunidad buscando ayuda, tira +corazón.
@@ -147,7 +149,9 @@ const Relacion = () => {
 
       <MovCard
         title={"TRAZAR EL CÍRCULO"}
-        url={""}
+        url={
+          "https://images.pexels.com/photos/3408420/pexels-photo-3408420.jpeg?auto=compress&cs=tinysrgb&w=600"
+        }
         description={
           <p>
             Cuando desafías a alguien a un duelo formal o aceptas un desafío,
@@ -211,7 +215,9 @@ const Relacion = () => {
       />
       <MovCard
         title={<h1>FORJAR UN VÍNCULO</h1>}
-        url={""}
+        url={
+          "https://images.unsplash.com/photo-1546733522-e5fa3ab28605?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHx2aWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+        }
         description={
           <p>
             Si haces este movimiento después cuando pasas un tiempo considerable
@@ -252,7 +258,9 @@ const Relacion = () => {
       />
       <MovCard
         title={<h1>PONER A PRUEBA UN VÍNCULO</h1>}
-        url={""}
+        url={
+          "https://images.unsplash.com/photo-1541381776119-a301192909ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+        }
         description={
           <p>
             Cuando las circunstancias, un conflicto o una traición ponen a
@@ -294,57 +302,55 @@ const Relacion = () => {
           </div>
         }
       />
-      <MovCard
+      <FancyCard
         title={<h1>AYUDAR A UN ALIADO</h1>}
-        url={""}
-        description={
-          <p>
-            Cuando creas una ventaja con el fin de ayudar a un aliado y obtienes
-            un éxito (total o parcial), el aliado (en vez de ti) puede
-            aprovecharse de los beneficios del movimiento. Si estáis en combate
-            y obtuviste un éxito total, tanto tú como el personaje aliado
-            lleváis la iniciativa.
-          </p>
+        url={
+          "https://images.unsplash.com/photo-1641575619171-46cfff1d9513?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQzfHx2aWtpbmdvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
         }
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
-      <MovCard
+      >
+        <p>
+          Cuando creas una ventaja con el fin de ayudar a un aliado y obtienes
+          un éxito (total o parcial), el aliado (en vez de ti) puede
+          aprovecharse de los beneficios del movimiento. Si estáis en combate y
+          obtuviste un éxito total, tanto tú como el personaje aliado lleváis la
+          iniciativa.
+        </p>
+      </FancyCard>
+      <FancyCard
         title={<h1>HACER UNA PAUSA</h1>}
-        url={""}
-        description={
-          <>
-            <p>
-              Cuando pases mucho tiempo recuperándote en un lugar seguro
-              mientras una amenaza está activa...
-            </p>
-            <DropDown title={"realiza una de las siguientes acciones:"}>
-              <ul>
-                <li>Borra las condiciones marcadas.</li>
-                <li>
-                  Establece tu salud, entereza, suministros y salud del
-                  compañero a sus valores máximos.
-                </li>
-                <li>
-                  Establece tu impulso a su valor de reinicio. Luego, para cada
-                  amenaza activa, avanza una amenaza.
-                </li>
-              </ul>
-            </DropDown>
-          </>
+        url={
+          "https://images.unsplash.com/photo-1615672969032-45c313ae0a2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
         }
-        exito={""}
-        semi={""}
-        fallo={""}
-      />
+      >
+        <>
+          <p>
+            Cuando pases mucho tiempo recuperándote en un lugar seguro mientras
+            una amenaza está activa...
+          </p>
+          <DropDown title={"realiza una de las siguientes acciones:"}>
+            <ul>
+              <li>Borra las condiciones marcadas.</li>
+              <li>
+                Establece tu salud, entereza, suministros y salud del compañero
+                a sus valores máximos.
+              </li>
+              <li>
+                Establece tu impulso a su valor de reinicio. Luego, para cada
+                amenaza activa, avanza una amenaza.
+              </li>
+            </ul>
+          </DropDown>
+        </>
+      </FancyCard>
       <MovCard
         title={
           <h1>
             ESCRIBIR TU EPÍLOGO <br /> (M. PROGRESO)
           </h1>
         }
-        url={""}
+        url={
+          "https://images.unsplash.com/photo-1599147208154-5c0d508d47a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fHZpa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        }
         description={
           <p>
             Cuando te retiras y dejas atrás tu vida de aventuras, búsquedas y

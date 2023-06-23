@@ -22,7 +22,7 @@ const FancyCard = ({ title = "", url = "", pos = "50% 50%", children }) => {
       >
         <div className="flex flex-col items-end">
           <div className="font-rune text-4xl text-end w-4/5">{title}</div>
-          <p className=" text-center text-xs">{title}</p>
+          <div className=" text-center text-xs">{title}</div>
         </div>
         <div className=" self-end drop-shadow bg-slate-400/60 p-2 rounded-2xl">
           {children}

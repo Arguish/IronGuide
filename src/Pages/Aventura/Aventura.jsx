@@ -2,16 +2,11 @@ import React from "react";
 import FancyCard from "../../Components/FancyCard/FancyCard";
 import DropDown from "../../Components/DropDown/DropDown";
 import Result from "../../Components/Result/Result.jsx";
+import VSlider from "../../Components/VSlider/VSlider.jsx";
 
 const Aventura = () => {
   return (
-    <div
-      className="h-screen flex-col gap-2"
-      style={{
-        overflow: "scroll",
-        scrollSnapType: "y mandatory",
-      }}
-    >
+    <VSlider>
       <FancyCard
         url={
           "https://images.pexels.com/photos/10068848/pexels-photo-10068848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -136,7 +131,7 @@ const Aventura = () => {
       </FancyCard>
       <FancyCard
         title="CURAR"
-        url="https://images.pexels.com/photos/13719328/pexels-photo-13719328.jpeg?auto=compress&cs=tinysrgb&w=600"
+        url="https://images.unsplash.com/photo-1635171682317-638f8135862b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHZpa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
       >
         <p>
           Cuando tratas una lesión o una dolencia, tira + mente. Si estás
@@ -183,7 +178,7 @@ const Aventura = () => {
       </FancyCard>
       <FancyCard
         title="ACAMPAR"
-        url="https://images.pexels.com/photos/2463815/pexels-photo-2463815.jpeg?auto=compress&cs=tinysrgb&w=600"
+        url="https://images.unsplash.com/photo-1551537593-f119d065a4d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fHZpa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
       >
         <p>
           Cuando descansas y te repones durante varias horas en la naturaleza,
@@ -327,7 +322,7 @@ const Aventura = () => {
           </p>
         </Result>
       </FancyCard>
-    </div>
+    </VSlider>
   );
 };
 

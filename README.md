@@ -1,8 +1,11 @@
 # IronGuide
 
-## Intro
+## Fallos conocidos
 
-Lorem Ipsum Noseque
+- Problemas con la tarjeta "Pasar un tiempo en una comunidad" : Overflow => modal?
+- Poca calidad en las imagenes : query?
+- ItemPicker : Overflow
+- Oracle : Not responsive
 
 ---
 

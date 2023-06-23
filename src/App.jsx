@@ -11,7 +11,6 @@ function App() {
     <>
       <NavBar></NavBar>
       <Directory></Directory>
-      {location.pathname !== "/" && <NavBtn to="/" text="Home"></NavBtn>}
     </>
   );
 }
