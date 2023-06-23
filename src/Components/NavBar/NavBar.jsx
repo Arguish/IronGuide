@@ -36,7 +36,6 @@ const NavBar = () => {
           <NavBtn to="/Delve"></NavBtn>
           <NavBtn to="/Busqueda"></NavBtn>
           <NavBtn to="/Oraculo"></NavBtn>
-          <NavBtn to="/All"></NavBtn>
           <NavBtn to="/About"></NavBtn>
         </div>
       )}

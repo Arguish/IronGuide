@@ -24,7 +24,6 @@ const Directory = () => {
       <Route path="/Sufrimiento" element={<Sufrimiento />} />
       <Route path="/Delve" element={<Delve />} />
       <Route path="/Busqueda" element={<Busqueda />} />
-      <Route path="/All" element={<All />} />
       <Route path="/Oraculo" element={<Oraculo />} />
       <Route path="/*" element={<Navigate to="/" replace={true} />} />
     </Routes>
