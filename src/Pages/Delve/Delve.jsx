@@ -12,7 +12,10 @@ const Delve = () => {
   const [pick, setpick] = useState("off");
   return (
     <VSlider>
-      <FancyCard title={<h1>DESCUBRIR UN SITIO</h1>}>
+      <FancyCard
+        title={<h1>DESCUBRIR UN SITIO</h1>}
+        url="https://images.unsplash.com/photo-1605190587727-519a8020dbf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlraW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando decides entrar en un lugar peligroso para conseguir un
           objetivo. Elige el tema y el dominio que mejor representen su
@@ -46,6 +49,7 @@ const Delve = () => {
       </FancyCard>
       <MovCard
         title={<h1>EXPLORAR LAS PROFUNDIDADES</h1>}
+        url="https://images.unsplash.com/photo-1583447198378-a0aeae7eec9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGR1bmdlb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         description={
           <>
             <p>
@@ -116,7 +120,10 @@ const Delve = () => {
         }
         fallo={<p>Fallo: Revelar un Peligro</p>}
       ></MovCard>
-      <FancyCard title={<h1>ENCUENTRA UNA OPORTUNIDAD</h1>}>
+      <FancyCard
+        title={<h1>ENCUENTRA UNA OPORTUNIDAD</h1>}
+        url="https://images.unsplash.com/photo-1651614688162-1d2f37f48e36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA2fHx2aWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando encuentres una situación o característica útil dentro de un
           lugar, tira en la siguiente tabla.
@@ -170,7 +177,10 @@ const Delve = () => {
           </DropDown>
         </Result>
       </FancyCard>
-      <FancyCard title={<h1>DESCUBRE UN PELIGRO</h1>}>
+      <FancyCard
+        title={<h1>DESCUBRE UN PELIGRO</h1>}
+        url="https://images.unsplash.com/photo-1550346949-d1add938cba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlraW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando te encuentres con una situación de riesgo dentro de un sitio,
           imagina en qué consiste el peligro o tira en la siguiente tabla:
@@ -179,6 +189,7 @@ const Delve = () => {
       </FancyCard>
       <MovCard
         title={<h1>LOCALIZAR TU OBJETIVO (PROGRESO)</h1>}
+        url="https://images.unsplash.com/photo-1634067128963-45ae8a114605?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHZpa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
         description={
           <p>
             Cuando la exploración de un lugar llega a su fin, tira los dados de
@@ -218,6 +229,7 @@ const Delve = () => {
       ></MovCard>
       <MovCard
         title={<h1>ESCAPAR DE LAS PROFUNDIDADES</h1>}
+        url="https://images.unsplash.com/photo-1602667599523-a2f7b709b6fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGR1bmdlb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         description={
           <>
             <p>

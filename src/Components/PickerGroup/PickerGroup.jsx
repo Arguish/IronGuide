@@ -23,7 +23,7 @@ const PickerGroup = ({ title, array, subtitles }) => {
         {array.map((a, i) => {
           return (
             <div
-              className="flex flex-col items-center w-1/4 m-1"
+              className="flex flex-col flex-warp w-36 items-center m-1"
               key={i}
               onMouseEnter={() => {
                 setdisable(true);

@@ -12,6 +12,7 @@ const Busqueda = () => {
     <VSlider>
       <MovCard
         title={<h1>JURAR POR EL HIERRO</h1>}
+        url="https://images.unsplash.com/photo-1644328293740-48c747844f87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHZpa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
         description={
           <p>
             Cuando juras por el Hierro que completarás una búsqueda, escribe tu
@@ -55,7 +56,10 @@ const Busqueda = () => {
         }
       ></MovCard>
 
-      <FancyCard title={<h1>ALCANZAR UN HITO</h1>}>
+      <FancyCard
+        title={<h1>ALCANZAR UN HITO</h1>}
+        url="https://images.unsplash.com/photo-1564598522417-e9ac1425d7c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHZpa2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando haces un progreso significativo en tu búsqueda superando un
           obstáculo crítico, llegando al final de un viaje lleno de peligros,
@@ -72,6 +76,7 @@ const Busqueda = () => {
       </FancyCard>
       <MovCard
         title={<h1>CUMPLIR TU JURAMENTO (M. PROGRESO)</h1>}
+        url="https://images.unsplash.com/photo-1651614698510-3f923136e6cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHx2aWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
         description={
           <p>
             Cuando crees haber cumplido tu palabra dada en un juramento, tira
@@ -135,7 +140,10 @@ const Busqueda = () => {
           </>
         }
       ></MovCard>
-      <FancyCard title={<h1>ROMPER TU JURAMENTO</h1>}>
+      <FancyCard
+        title={<h1>ROMPER TU JURAMENTO</h1>}
+        url="https://images.unsplash.com/photo-1659095332109-16093b523cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg2fHx2aWtpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando renuncies a tu misión, traiciones tu promesa o el objetivo sea
           inalcanzable, elimina el voto y Soporta el estrés :
@@ -157,7 +165,10 @@ const Busqueda = () => {
           compartes un vínculo, Pon a prueba el vínculo en tu próximo encuentro.
         </p>
       </FancyCard>
-      <FancyCard title={<h1>MEJORAR</h1>}>
+      <FancyCard
+        title={<h1>MEJORAR</h1>}
+        url="https://images.unsplash.com/photo-1528918230037-b8e9a8d403f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvcmdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando practicas tus habilidades, recibes adiestramiento, encuentras
           inspiración, ganas una recompensa u obtienes un compañero, puedes
@@ -165,7 +176,10 @@ const Busqueda = () => {
           puntos para mejorar uno que ya tienes.
         </p>
       </FancyCard>
-      <FancyCard title={<h1>MARCAR TU FRACASO</h1>}>
+      <FancyCard
+        title={<h1>MARCAR TU FRACASO</h1>}
+        url="https://images.pexels.com/photos/10547073/pexels-photo-10547073.jpeg?auto=compress&cs=tinysrgb&w=600"
+      >
         <p>
           Cuando hagas un movimiento y anotes un error, haz una marca en tu
           registro de fallos. Si anotas un error al hacer un movimiento de
@@ -174,6 +188,7 @@ const Busqueda = () => {
       </FancyCard>
       <MovCard
         title={<h1>APRENDE DE TUS FRACASOS (M. PROGRESO)</h1>}
+        url="https://images.pexels.com/photos/9918830/pexels-photo-9918830.jpeg?auto=compress&cs=tinysrgb&w=600"
         description={
           <p>
             Cuando dediques tiempo a reflexionar sobre tus dificultades y pasos
@@ -216,7 +231,10 @@ const Busqueda = () => {
           </p>
         }
       ></MovCard>
-      <FancyCard title={<h1>AVANZAR UNA AMENAZA</h1>}>
+      <FancyCard
+        title={<h1>AVANZAR UNA AMENAZA</h1>}
+        url="https://images.pexels.com/photos/682375/pexels-photo-682375.jpeg?auto=compress&cs=tinysrgb&w=600"
+      >
         <p>
           Cuando cedas terreno a una amenaza por inacción, fallo o retraso, pasa
           a la tabla a continuación e imagina cómo se manifiesta el cambio en el
@@ -227,11 +245,15 @@ const Busqueda = () => {
           juramento.
         </p>
       </FancyCard>
-      <FancyCard title={<h1>MANEJA UNA RAREZA</h1>}>
+      <FancyCard
+        title={<h1>MANEJA UNA RAREZA</h1>}
+        url="https://images.pexels.com/photos/11739206/pexels-photo-11739206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      >
         <ItemPicker array={Tablas.ManejarUnaRareza}></ItemPicker>
       </FancyCard>
       <MovCard
         title={<h1>AFRONTAR LA DESOLACIÓN</h1>}
+        url="https://images.unsplash.com/photo-1676192707495-d60b87979989?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHx2aWtpbmdvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
         description={
           <p>Cuando seas llevado al borde de la desolación, tira +corazón.</p>
         }
@@ -267,7 +289,10 @@ const Busqueda = () => {
           </p>
         }
       ></MovCard>
-      <FancyCard title={<h1>QUEDAR SIN SUMINISTROS</h1>}>
+      <FancyCard
+        title={<h1>SIN SUMINISTROS</h1>}
+        url="https://images.unsplash.com/photo-1633389254082-d63cc1d6aaf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHZpa2luZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando se agotan los suministros (se reducen a 0), todo el mundo marca
           la condición sin suministros.
@@ -279,7 +304,10 @@ const Busqueda = () => {
           equivalente) según las circunstancias.
         </p>
       </FancyCard>
-      <FancyCard title={<h1>AFRONTAR UN CONTRATIEMPO</h1>}>
+      <FancyCard
+        title={<h1>AFRONTAR UN CONTRATIEMPO</h1>}
+        url="https://images.unsplash.com/photo-1622332515231-18bc53f7ad45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGJyb2tlbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+      >
         <p>
           Cuando tu impulso está en su valor mínimo (-6) y sufres una pérdida de
           impulso adicional...

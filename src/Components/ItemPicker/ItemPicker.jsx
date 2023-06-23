@@ -28,11 +28,11 @@ const ItemPicker = ({ array, title }) => {
     <div className="flex flex-col justify-center w-full text-center rounded-2xl border-2 border-indigo-400 bg-indigo-300">
       <h1>{title}</h1>
       <div
-        className=" p-2 w-full h-32 rounded-2xl border-t-2 border-indigo-900 bg-indigo-900 flex justify-center items-center select-none"
+        className=" p-2  rounded-2xl border-t-2 border-indigo-900 bg-indigo-900 flex flex-col justify-center items-center select-none"
         onClick={() => reroll()}
       >
-        <h1 className="my-2 mx-6 text-2xl">{value}</h1>
-        <p className=" my-2 ">{description}</p>
+        <h1 className="my-1 mx-auto text-2xl">{value}</h1>
+        <p className=" my-1 ">{description}</p>
       </div>
     </div>
   );
