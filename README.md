@@ -1,5 +1,7 @@
 # IronGuide
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3e4418ae-eb3f-481e-8e0d-ebc37e4417ef/deploy-status)](https://app.netlify.com/sites/ironsworn/deploys)
+
 ## Fallos conocidos
 
 - Problemas con la tarjeta "Pasar un tiempo en una comunidad" : Overflow => modal?

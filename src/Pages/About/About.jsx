@@ -24,6 +24,13 @@ const About = () => {
         retener el espíritu de las reglas tal y como fueron escritas. Para su
         traducción al español se utilizó el Ironsworn de Verkami.
       </p>
+      <h1>NOTAS DE DESAROLLO 2</h1>
+      <p>
+        Esta web se ha desarollado sobre el trabajo de los grupos nombrados
+        arriba, aqui solo se le intenta dar una estructura mas navegable, online
+        y ayudar con la automatizacion de las tiradas en las tablas. Todos los
+        derechos y agradecimientos a sus debidos autores
+      </p>
     </>
   );
 };
